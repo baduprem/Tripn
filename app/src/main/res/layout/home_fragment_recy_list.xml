@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FF153457"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+         <ImageView
+            android:id="@+id/img_name"
+            android:src="@mipmap/boudha"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@+id/img_name"
+            android:textSize="22sp"
+            android:text="Boudha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="#d1d9d1"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="22sp"
+        android:text="Destionations In Nepal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#aab7b529"
+        android:id="@+id/homeRecyvlierView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
